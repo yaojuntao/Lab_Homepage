@@ -419,6 +419,79 @@
 									*/
 										</script>
 									
+									<div class="slideshow-container">
+
+										<div class="mySlidesSlideSetNo003">
+										  
+										  <img src="researchpageimages/Radiated EMI Modeling and Critical Component Identification V2.jpg" style="width:100%">
+										 
+										</div>
+
+										<div class="mySlidesSlideSetNo003">
+										
+										  <img src="researchpageimages/Transformer Structure Optimization for Radiated EMI Reduction V2.jpg" style="width:100%">
+										  
+										</div>
+
+										<!--
+										<div class="mySlides fade">
+										  <div class="numbertext">3 / 3</div>
+										  <img src="img_mountains_wide.jpg" style="width:100%">
+										  <div class="text">Caption Three</div>
+										</div>
+										-->
+										
+										<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+ 										<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+										</div>
+										<br>
+
+										
+
+										<script>
+										 /* 
+											var slideIndexSlideSetNo002 = 0;
+										showSlidesSlideSetNo002();
+
+										function showSlidesSlideSetNo002() {
+										  var i;
+										  var slidesSlideSetNo002 = document.getElementsByClassName("mySlidesSlideSetNo002");
+										  var dots = document.getElementsByClassName("dot");
+										  for (i = 0; i < slidesSlideSetNo002.length; i++) {
+										    slidesSlideSetNo002[i].style.display = "none";  
+										  }
+										  slideIndexSlideSetNo002++;
+										  if (slideIndexSlideSetNo002 > slidesSlideSetNo002.length) {slideIndexSlideSetNo002 = 1}    
+										  for (i = 0; i < dots.length; i++) {
+										    dots[i].className = dots[i].className.replace(" active", "");
+										  }
+										  slidesSlideSetNo002[slideIndexSlideSetNo002-1].style.display = "block";  
+										  dots[slideIndexSlideSetNo002-1].className += " active";
+										  setTimeout(showSlidesSlideSetNo002, 6000); 
+										}
+										*/
+										 	
+									var slideSetNoIndexLeftRight = [1,1];
+									var slideId = ["mySlidesSlideSetNo003"]
+									showSlides(1, 0);
+									showSlides(1, 1);
+
+									function plusSlides(n, no) {
+									  showSlides(slideSetNoIndexLeftRight[no] += n, no);
+									}
+
+									function showSlides(n, no) {
+									  var i;
+									  var x = document.getElementsByClassName(slideId[no]);
+									  if (n > x.length) {slideSetNoIndexLeftRight[no] = 1}    
+									  if (n < 1) {slideSetNoIndexLeftRight[no] = x.length}
+									  for (i = 0; i < x.length; i++) {
+									     x[i].style.display = "none";  
+									  }
+									  x[slideSetNoIndexLeftRight[no]-1].style.display = "block";  
+									}
+									
+										</script>
 									
 									
 									<h4>In Active Clamp Flyback Converters, Radiated EMI Modeling and Reduction Techniques (Post pending)</h4>
