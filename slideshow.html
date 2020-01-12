@@ -1,265 +1,113 @@
-<!DOCTYPE HTML>
-<!--
-	
-
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Prof. Shuo Wang's Lab PEEPRL</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		
-		<style>
-		img {
-  		display: block;
-  		margin-left: auto;
-  		margin-right: auto;
-			}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
 
-		figcaption {
-		/*    float: right; /* Delete Me */
-  		 /*  font-size: 10px;*/
-   		 margin: 10px;
-  		  text-align: center;  /* ADD Me */
-		}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-		</style>
-		
-	</head>
-	<body class="is-preload">
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+</head>
+<body>
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>PEEPRL Lab</strong> at University of Florida</a>
-									<ul class="icons">
-										<li><a href="https://scholar.google.com/citations?user=zvZUp70AAAAJ&hl=en" class="icon brands fa-google"><span class="label">Google</span></a></li>
-										<li><a href="https://www.linkedin.com/in/shuo-wang-b3741b2a" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
-									        <li><a href="https://www.facebook.com/shuo.wang.7796" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<!--
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-									-->
-									</ul>
-								</header>
+<h2 style="text-align:center">Multiple Slideshows</h2>
 
-							<!-- Content -->
-								<section>
-									<header class="main">
-										<h2>Researches</h2>
-										<h3>(More posts pending) </h3>
-									</header>
-									
-						<!-- <h3 class="mb-0"> Radiated EMI in Power Electronics Systems</h3>  -->
+<p>Slideshow 1:</p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="researchpageimages/Semi-Anechoic Chamber at PEEPRL, UF.jpg" style="width:100%">
+  </div>
 
-									<hr class="major" />
+  <div class="mySlides1">
+    <img src="researchpageimages/Data Post-processing of Radiated EMI Measurement Results.jpg" style="width:100%">
+  </div>
+	
+<!--
+  <div class="mySlides1">
+    <img src="img_mountains_wide.jpg" style="width:100%">
+  </div>
+-->
+	
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
 
-									<h3>Radiated EMI in Power Electronics Systems</h3>
-									<p>With ever-increasing development on high switching frequency and high power density of power electronics, electromagnetic interference (EMI) is becoming more and more serious. For power electronics applications including power adapters and electric vehicles, radiated EMI is regulated by international standards, e.g. CISPR 22 and CISPR 25. Modeling and reduction of radiated EMI in power converters become increasingly important.</p>
-									
-									<h4>Semi-anechoic Chamber for the Radiated EMI Testing</h4>
-									<p>Learn about the semi-anechoic chamber facility owned by our lab, please<a href="https://peeprlgator.github.io/Shuo.Wang/researchpageattachments/Juntao 20200108 Radiated EMI Testing in the Semi-anechoic Chamber.pdf" class="content"> download.</a></p>
-									<div class="posts">
-									<article>
-										<span class="image"><img src="researchpageimages/Semi-Anechoic Chamber at PEEPRL, UF.jpg" alt="" /></span>
-									</article>
-									<article>
-										<span class="image"><img src="researchpageimages/Data Post-processing of Radiated EMI Measurement Results.jpg" alt="" /></span>
-									</article>
-									</div>
-									<p></p><p></p><p></p>
-									
-									<h4>In Flyback Converters, Radiated EMI Modeling and Reduction by Improving the Transformer Structure</h4>
-									<div class="posts">
-									<article>
-										<span class="image"><img src="researchpageimages/Radiated EMI Modeling and Critical Component Identification V2.jpg" alt="" /></span>
-									</article>
-									<article>
-										<span class="image"><img src="researchpageimages/Transformer Structure Optimization for Radiated EMI Reduction V2.jpg" alt="" /></span>
-									</article>
-									</div>
-									
-									<h4>In Active Clamp Flyback Converters, Radiated EMI Modeling and Reduction Techniques (Post pending)</h4>
-									<p></p><p></p><p></p>
-									<h4>In Non-isolated Power Converters, Radiated EMI Modeling and Reduction Techniques (Post pending)</h4>
-									<p></p><p></p><p></p>
-									
-									<hr class="major" />
+<p>Slideshow 2:</p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="researchpageimages/Semi-Anechoic Chamber at PEEPRL, UF.jpg" style="width:100%">
+  </div>
 
-									<h3>More posts pending</h3>
-									<p></p>
-									
-									<h4></h4>
-									
-									
-									
-									<!--
-									<hr class="major" />
+  <div class="mySlides2">
+    <img src="researchpageimages/Data Post-processing of Radiated EMI Measurement Results.jpg" style="width:100%">
+  </div>
 
-									<h2>Interdum sed dapibus</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+<!--
+  <div class="mySlides2">
+    <img src="img_band_ny.jpg" style="width:100%">
+  </div>
+-->
+	
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
 
-									<hr class="major" />
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
 
-									<h2>Magna etiam veroeros</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
 
-									<hr class="major" />
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
 
-									<h2>Lorem aliquam bibendum</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									-->
-									
-								</section>
-
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Search -->
-							<!--
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-							-->
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="researches.html">Researches</a></li>
-										<li><a href="publications.html">Publications</a></li>
-										<li><a href="people.html">People</a></li>
-										
-										<!--
-										<li><a href="elements.html">Elements</a></li>
-										-->
-										
-										
-										
-										
-										
-										
-										<!--
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
-								</nav>
-								-->
-						
-
-							<!-- Section -->
-								<!--
-								<section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section>
-							-->
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-									<!--
-										<h2>Get in touch</h2>
-									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
-									</ul>
-								-->
-								</section>
-								
-										
-										
-										
-										
-
-							<!-- Footer -->
-							<!--
-								<footer id="footer">
-									&nbsp;
-									&nbsp;
-									&nbsp;
-									&nbsp;
-									&nbsp;
-									&nbsp;
-									<p class="copyright">&copy;  All rights reserved. <br />   
-										Editor:  <a href="https://yaojuntao.github.io/Juntao_Yao/#">Juntao Yao </a> <br /> 
-										Email:  <a href="mailto:juntaoyao@gmail.com">juntaoyao@gmail.com</a></a></p>
-								</footer>
-							-->
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+</body>
+</html> 
