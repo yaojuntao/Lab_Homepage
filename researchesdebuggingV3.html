@@ -297,27 +297,7 @@
 									
 									<hr class="major" />
 
-									<script>
-									var slideSetNoIndexLeftRight = [1,1];
-									var slideId = ["mySlidesSlideSetNoREChamberIntro"]
-									showSlides(1, 0);
-									showSlides(1, 1);
 
-									function plusSlides(n, no) {
-									  showSlides(slideSetNoIndexLeftRight[no] += n, no);
-									}
-
-									function showSlides(n, no) {
-									  var i;
-									  var x = document.getElementsByClassName(slideId[no]);
-									  if (n > x.length) {slideSetNoIndexLeftRight[no] = 1}    
-									  if (n < 1) {slideSetNoIndexLeftRight[no] = x.length}
-									  for (i = 0; i < x.length; i++) {
-									     x[i].style.display = "none";  
-									  }
-									  x[slideSetNoIndexLeftRight[no]-1].style.display = "block";  
-									}
-									</script>
 
 
 									<h3>More posts pending</h3>
@@ -488,5 +468,26 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+									<script>
+									var slideSetNoIndexLeftRight = [1,1];
+									var slideId = ["mySlidesSlideSetNoREChamberIntro"]
+									showSlides(1, 0);
+									showSlides(1, 1);
+
+									function plusSlides(n, no) {
+									  showSlides(slideSetNoIndexLeftRight[no] += n, no);
+									}
+
+									function showSlides(n, no) {
+									  var i;
+									  var x = document.getElementsByClassName(slideId[no]);
+									  if (n > x.length) {slideSetNoIndexLeftRight[no] = 1}    
+									  if (n < 1) {slideSetNoIndexLeftRight[no] = x.length}
+									  for (i = 0; i < x.length; i++) {
+									     x[i].style.display = "none";  
+									  }
+									  x[slideSetNoIndexLeftRight[no]-1].style.display = "block";  
+									}
+									</script>
 	</body>
 </html>
