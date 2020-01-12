@@ -15,15 +15,72 @@
   		display: block;
   		margin-left: auto;
   		margin-right: auto;
+			max-width: 500px;
 			}
 
 		figcaption {
 		/*    float: right; /* Delete Me */
   		 /*  font-size: 10px;*/
-   		 margin: 10px;
+   		 margin: 0px;
   		  text-align: center;  /* ADD Me */
 		}
 
+			
+			figure {
+			 /* float: right;*/
+				float: center;
+			/*  width: 30%;*/
+			/*width: 50%;*/
+			  max-width: 500px;
+			margin: auto;
+			  text-align: center;
+			  font-style: italic;
+			  font-size: smaller;
+			  text-indent: 0;
+			/*  border: thin silver solid;*/
+			/*  margin: 0.5em;*/
+			/*  padding: 0.5em;*/
+			}
+			img.scaled {
+			  width: 100%;
+			}
+			
+			
+
+			
+			
+			
+			
+			
+			/* Next & previous buttons */
+			.prev, .next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 50%;
+			  width: auto;
+			  padding: 16px;
+			  margin-top: -22px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 18px;
+			  transition: 0.6s ease;
+			  border-radius: 0 3px 3px 0;
+			  user-select: none;
+			}
+
+			/* Position the "next button" to the right */
+			.next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a grey background color */
+			.prev:hover, .next:hover {
+			  background-color: #f1f1f1;
+			  color: black;
+			}
+
+			
 		</style>
 		
 	</head>
@@ -58,6 +115,29 @@
 										<h3>(More posts pending) </h3>
 									</header>
 									
+									<!--
+									<hr class="major" />
+
+									<h3>Conducted EMI in Power Electronics Systems</h3>
+									<p>High power density AC/DC power converters are popularly used in power adapters/chargers of portable electronics such as laptops, smart phones and tablets. EMI noise, such as common mode (CM) noise leads to big EMI filters. To reduce EMI filter size, EMI such as CM EMI should be reduced. Various techniques have been developed to reduce CM noise for power converters.</p>
+									
+									<h4>Semi-anechoic Chamber for the Radiated EMI Testing</h4>
+									<p>Learn about the semi-anechoic chamber facility owned by our lab, please<a href="https://peeprlgator.github.io/Shuo.Wang/researchpageattachments/Juntao 20200108 Radiated EMI Testing in the Semi-anechoic Chamber.pdf" class="content"> download.</a></p>
+									
+									<figure>
+									  <p><img class=scaled src="researchpageimages/Semi-Anechoic Chamber at PEEPRL, UF.jpg"
+									    alt=" ">
+									  <figcaption>Semi-Anechoic Chamber at PEEPRL, UF</figcaption>
+									</figure>
+									
+									
+										<figure>
+  										  <p><img class=scaled src="researchpageimages/Semi-Anechoic Chamber at PEEPRL, UF.jpg"
+  										  alt=" " style="">
+ 										   <figcaption>Semi-Anechoic Chamber at PEEPRL, UF </figcaption> 
+										</figure>
+										<p></p>
+									-->
 						<!-- <h3 class="mb-0"> Radiated EMI in Power Electronics Systems</h3>  -->
 
 									<hr class="major" />
@@ -67,6 +147,86 @@
 									
 									<h4>Semi-anechoic Chamber for the Radiated EMI Testing</h4>
 									<p>Learn about the semi-anechoic chamber facility owned by our lab, please<a href="https://peeprlgator.github.io/Shuo.Wang/researchpageattachments/Juntao 20200108 Radiated EMI Testing in the Semi-anechoic Chamber.pdf" class="content"> download.</a></p>
+									
+									
+									<!--<h2>Automatic Slideshow</h2>-->
+										<!--<p>Change image every 2 seconds:</p>-->
+
+										<div class="slideshow-container">
+
+										<div class="mySlidesSlideSetNoREChamberIntro fade">
+										  <div class="numbertext"> </div>
+										  <img src="researchpageimages/Semi-Anechoic Chamber at PEEPRL, UF.jpg" style="width:100%">
+										  <div class="text">1/2 </div>
+										</div>
+
+										<div class="mySlidesSlideSetNoREChamberIntro fade">
+										  <div class="numbertext"></div>
+										  <img src="researchpageimages/Data Post-processing of Radiated EMI Measurement Results.jpg" style="width:100%">
+										  <div class="text">2/2 </div>
+										</div>
+
+										<!--
+										<div class="mySlides fade">
+										  <div class="numbertext">3 / 3</div>
+										  <img src="img_mountains_wide.jpg" style="width:100%">
+										  <div class="text">Caption Three</div>
+										</div>
+										-->
+
+										</div>
+										<br>
+
+										<div style="text-align:center">
+										  <span class="dot"></span> 
+										  <span class="dot"></span> 
+										  <!--<span class="dot"></span> -->
+										</div>
+																		
+										
+										<script>
+										var slideIndexSlideSetNoREChamberIntro = 0;
+										showSlidesSlideSetNoREChamberIntro();
+
+										function showSlidesSlideSetNoREChamberIntro() {
+										  var i;
+										  var slidesSlideSetNoREChamberIntro = document.getElementsByClassName("mySlidesSlideSetNoREChamberIntro");
+										  var dots = document.getElementsByClassName("dot");
+										  for (i = 0; i < slidesSlideSetNoREChamberIntro.length; i++) {
+										    slidesSlideSetNoREChamberIntro[i].style.display = "none";  
+										  }
+										  slideIndexSlideSetNoREChamberIntro++;
+										  if (slideIndexSlideSetNoREChamberIntro > slidesSlideSetNoREChamberIntro.length) {slideIndexSlideSetNoREChamberIntro = 1}    
+										  for (i = 0; i < dots.length; i++) {
+										    dots[i].className = dots[i].className.replace(" active", "");
+										  }
+										  slidesSlideSetNoREChamberIntro[slideIndexSlideSetNoREChamberIntro-1].style.display = "block";  
+										  dots[slideIndexSlideSetNoREChamberIntro-1].className += " active";
+										  setTimeout(showSlidesSlideSetNoREChamberIntro, 6000); // Change image every 2 seconds
+										}
+										</script>
+
+
+										
+										
+										
+									
+										<!--
+										<figure>
+  										  <p><img class=scaled src="researchpageimages/Semi-Anechoic Chamber at PEEPRL, UF.jpg"
+  										  alt=" " style="width:50%;">
+ 										   <figcaption>Semi-Anechoic Chamber at PEEPRL, UF </figcaption> 
+										</figure>
+										<p></p>
+										-->
+									
+										<!--
+										<figure>
+  										  <p><img class=scaled src="researchpageimages/Data Post-processing of Radiated EMI Measurement Results.jpg"
+  										  alt=" " style="width:50%;">
+ 										   <figcaption>Post-processing of radiated EMI testing data</figcaption> 
+										</figure>
+
 									<div class="posts">
 									<article>
 										<span class="image"><img src="researchpageimages/Semi-Anechoic Chamber at PEEPRL, UF.jpg" alt="" /></span>
@@ -76,16 +236,194 @@
 									</article>
 									</div>
 									<p></p><p></p><p></p>
+									 -->
 									
 									<h4>In Flyback Converters, Radiated EMI Modeling and Reduction by Improving the Transformer Structure</h4>
+										
+									<!--
+										<figure>
+  										  <p><img class=scaled src="researchpageimages/Radiated EMI Modeling and Critical Component Identification V2.jpg"
+  										  alt=" " style="width:50%;">
+ 										   <figcaption>Radiated EMI modeling of the flyback converter and its critical components </figcaption> 
+										</figure>
+										<p></p>
+									
+										<figure>
+  										  <p><img class=scaled src="researchpageimages/Transformer Structure Optimization for Radiated EMI Reduction V2.jpg"
+  										  alt=" " style="width:50%;">
+ 										   <figcaption>Transformer structure improvement for radiated EMI reduction </figcaption> 
+										</figure>
+										<p></p>
+									-->
+									
+									<!--
 									<div class="posts">
 									<article>
 										<span class="image"><img src="researchpageimages/Radiated EMI Modeling and Critical Component Identification V2.jpg" alt="" /></span>
+										<figcaption>Radiated EMI modeling of the flyback converter and its critical components </figcaption> 
 									</article>
 									<article>
 										<span class="image"><img src="researchpageimages/Transformer Structure Optimization for Radiated EMI Reduction V2.jpg" alt="" /></span>
+										<figcaption>Transformer structure improvement for radiated EMI reduction </figcaption> 
 									</article>
 									</div>
+									-->
+																		<!--<h2>Automatic Slideshow</h2>-->
+										<!--<p>Change image every 2 seconds:</p>-->
+
+										<div class="slideshow-container">
+
+										<div class="mySlidesSlideSetNo002 fade">
+										  <div class="numbertext"> </div>
+										  <img src="researchpageimages/Radiated EMI Modeling and Critical Component Identification V2.jpg" style="width:100%">
+										  <div class="text">1/2 </div>
+										</div>
+
+										<div class="mySlidesSlideSetNo002 fade">
+										  <div class="numbertext"></div>
+										  <img src="researchpageimages/Transformer Structure Optimization for Radiated EMI Reduction V2.jpg" style="width:100%">
+										  <div class="text">2/2 </div>
+										</div>
+
+										<!--
+										<div class="mySlides fade">
+										  <div class="numbertext">3 / 3</div>
+										  <img src="img_mountains_wide.jpg" style="width:100%">
+										  <div class="text">Caption Three</div>
+										</div>
+										-->
+										
+										<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+ 										<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+										</div>
+										<br>
+
+										<div style="text-align:center">
+										  <span class="dot"></span> 
+										  <span class="dot"></span> 
+										  <!--<span class="dot"></span> -->
+										</div>
+
+										<script>
+										
+											var slideIndexSlideSetNo002 = 0;
+										showSlidesSlideSetNo002();
+
+										function showSlidesSlideSetNo002() {
+										  var i;
+										  var slidesSlideSetNo002 = document.getElementsByClassName("mySlidesSlideSetNo002");
+										  var dots = document.getElementsByClassName("dot");
+										  for (i = 0; i < slidesSlideSetNo002.length; i++) {
+										    slidesSlideSetNo002[i].style.display = "none";  
+										  }
+										  slideIndexSlideSetNo002++;
+										  if (slideIndexSlideSetNo002 > slidesSlideSetNo002.length) {slideIndexSlideSetNo002 = 1}    
+										  for (i = 0; i < dots.length; i++) {
+										    dots[i].className = dots[i].className.replace(" active", "");
+										  }
+										  slidesSlideSetNo002[slideIndexSlideSetNo002-1].style.display = "block";  
+										  dots[slideIndexSlideSetNo002-1].className += " active";
+										  setTimeout(showSlidesSlideSetNo002, 6000); 
+										}
+										
+										 /*  	
+									var slideSetNoIndexLeftRight = [1,1];
+									var slideId = ["mySlidesSlideSetNo002"]
+									showSlides(1, 0);
+									showSlides(1, 1);
+
+									function plusSlides(n, no) {
+									  showSlides(slideSetNoIndexLeftRight[no] += n, no);
+									}
+
+									function showSlides(n, no) {
+									  var i;
+									  var x = document.getElementsByClassName(slideId[no]);
+									  if (n > x.length) {slideSetNoIndexLeftRight[no] = 1}    
+									  if (n < 1) {slideSetNoIndexLeftRight[no] = x.length}
+									  for (i = 0; i < x.length; i++) {
+									     x[i].style.display = "none";  
+									  }
+									  x[slideSetNoIndexLeftRight[no]-1].style.display = "block";  
+									}
+									*/
+										</script>
+									
+									<div class="slideshow-container">
+
+										<div class="mySlidesSlideSetNo003">
+										  
+										  <img src="researchpageimages/Radiated EMI Modeling and Critical Component Identification V2.jpg" style="width:100%">
+										 
+										</div>
+
+										<div class="mySlidesSlideSetNo003">
+										
+										  <img src="researchpageimages/Transformer Structure Optimization for Radiated EMI Reduction V2.jpg" style="width:100%">
+										  
+										</div>
+
+										<!--
+										<div class="mySlides fade">
+										  <div class="numbertext">3 / 3</div>
+										  <img src="img_mountains_wide.jpg" style="width:100%">
+										  <div class="text">Caption Three</div>
+										</div>
+										-->
+										
+										<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+ 										<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+										</div>
+										<br>
+
+										
+
+										<script>
+										 /* 
+											var slideIndexSlideSetNo002 = 0;
+										showSlidesSlideSetNo002();
+
+										function showSlidesSlideSetNo002() {
+										  var i;
+										  var slidesSlideSetNo002 = document.getElementsByClassName("mySlidesSlideSetNo002");
+										  var dots = document.getElementsByClassName("dot");
+										  for (i = 0; i < slidesSlideSetNo002.length; i++) {
+										    slidesSlideSetNo002[i].style.display = "none";  
+										  }
+										  slideIndexSlideSetNo002++;
+										  if (slideIndexSlideSetNo002 > slidesSlideSetNo002.length) {slideIndexSlideSetNo002 = 1}    
+										  for (i = 0; i < dots.length; i++) {
+										    dots[i].className = dots[i].className.replace(" active", "");
+										  }
+										  slidesSlideSetNo002[slideIndexSlideSetNo002-1].style.display = "block";  
+										  dots[slideIndexSlideSetNo002-1].className += " active";
+										  setTimeout(showSlidesSlideSetNo002, 6000); 
+										}
+										*/
+										 	
+									var slideSetNoIndexLeftRight = [1,1];
+									var slideId = ["mySlidesSlideSetNo003"]
+									showSlides(1, 0);
+									showSlides(1, 1);
+
+									function plusSlides(n, no) {
+									  showSlides(slideSetNoIndexLeftRight[no] += n, no);
+									}
+
+									function showSlides(n, no) {
+									  var i;
+									  var x = document.getElementsByClassName(slideId[no]);
+									  if (n > x.length) {slideSetNoIndexLeftRight[no] = 1}    
+									  if (n < 1) {slideSetNoIndexLeftRight[no] = x.length}
+									  for (i = 0; i < x.length; i++) {
+									     x[i].style.display = "none";  
+									  }
+									  x[slideSetNoIndexLeftRight[no]-1].style.display = "block";  
+									}
+									</script>
+									
+										</script>
+									
 									
 									<h4>In Active Clamp Flyback Converters, Radiated EMI Modeling and Reduction Techniques (Post pending)</h4>
 									<p></p><p></p><p></p>
