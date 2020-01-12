@@ -189,13 +189,13 @@
 
 										<div class="slideshow-container">
 
-										<div class="mySlides fade">
+										<div class="mySlidesSlideSetNoREChamberIntro fade">
 										  <div class="numbertext"> </div>
 										  <img src="researchpageimages/Semi-Anechoic Chamber at PEEPRL, UF.jpg" style="width:100%">
 										  <div class="text"> </div>
 										</div>
 
-										<div class="mySlides fade">
+										<div class="mySlidesSlideSetNoREChamberIntro fade">
 										  <div class="numbertext"></div>
 										  <img src="researchpageimages/Data Post-processing of Radiated EMI Measurement Results.jpg" style="width:100%">
 										  <div class="text"> </div>
@@ -219,27 +219,29 @@
 										</div>
 																		
 										<script>
-										var slideIndex = 0;
-										showSlides();
-											
-											
-										function showSlides() {
+										<script>
+										var slideIndexSlideSetNoREChamberIntro = 0;
+										showSlidesSlideSetNoREChamberIntro();
+
+										function showSlidesSlideSetNoREChamberIntro() {
 										  var i;
-										  var slides = document.getElementsByClassName("mySlides");
+										  var slidesSlideSetNoREChamberIntro = document.getElementsByClassName("mySlidesSlideSetNoREChamberIntro");
 										  var dots = document.getElementsByClassName("dot");
-										  for (i = 0; i < slides.length; i++) {
-										    slides[i].style.display = "none";  
+										  for (i = 0; i < slidesSlideSetNoREChamberIntro.length; i++) {
+										    slidesSlideSetNoREChamberIntro[i].style.display = "none";  
 										  }
-										  slideIndex++;
-										  if (slideIndex > slides.length) {slideIndex = 1}    
+										  slideIndexSlideSetNoREChamberIntro++;
+										  if (slideIndexSlideSetNoREChamberIntro > slidesSlideSetNoREChamberIntro.length) {slideIndexSlideSetNoREChamberIntro = 1}    
 										  for (i = 0; i < dots.length; i++) {
 										    dots[i].className = dots[i].className.replace(" active", "");
 										  }
-										  slides[slideIndex-1].style.display = "block";  
-										  dots[slideIndex-1].className += " active";
-										  setTimeout(showSlides, 3000); // Change image every 2 seconds
+										  slidesSlideSetNoREChamberIntro[slideIndexSlideSetNoREChamberIntro-1].style.display = "block";  
+										  dots[slideIndexSlideSetNoREChamberIntro-1].className += " active";
+										  setTimeout(showSlidesSlideSetNoREChamberIntro, 2000); // Change image every 2 seconds
 										}
 										</script>
+
+
 										
 										
 										
@@ -308,13 +310,13 @@
 
 										<div class="slideshow-container">
 
-										<div class="mySlides fade">
+										<div class="mySlidesSlideSetNo002 fade">
 										  <div class="numbertext"> </div>
 										  <img src="researchpageimages/Radiated EMI Modeling and Critical Component Identification V2.jpg" style="width:100%">
 										  <div class="text"> </div>
 										</div>
 
-										<div class="mySlides fade">
+										<div class="mySlidesSlideSetNo002 fade">
 										  <div class="numbertext"></div>
 										  <img src="researchpageimages/Transformer Structure Optimization for Radiated EMI Reduction V2.jpg" style="width:100%">
 										  <div class="text"> </div>
@@ -338,24 +340,24 @@
 										</div>
 
 										<script>
-										var slideIndex = 0;
-										showSlides();
+										var slideIndexSlideSetNo002 = 0;
+										showSlidesSlideSetNo002();
 
-										function showSlides() {
+										function showSlidesSlideSetNo002() {
 										  var i;
-										  var slides = document.getElementsByClassName("mySlides");
+										  var slidesSlideSetNo002 = document.getElementsByClassName("mySlidesSlideSetNo002");
 										  var dots = document.getElementsByClassName("dot");
-										  for (i = 0; i < slides.length; i++) {
-										    slides[i].style.display = "none";  
+										  for (i = 0; i < slidesSlideSetNo002.length; i++) {
+										    slidesSlideSetNo002[i].style.display = "none";  
 										  }
-										  slideIndex++;
-										  if (slideIndex > slides.length) {slideIndex = 1}    
+										  slideIndexSlideSetNo002++;
+										  if (slideIndexSlideSetNo002 > slidesSlideSetNo002.length) {slideIndexSlideSetNo002 = 1}    
 										  for (i = 0; i < dots.length; i++) {
 										    dots[i].className = dots[i].className.replace(" active", "");
 										  }
-										  slides[slideIndex-1].style.display = "block";  
-										  dots[slideIndex-1].className += " active";
-										  setTimeout(showSlides, 3000); // Change image every 2 seconds
+										  slidesSlideSetNo002[slideIndexSlideSetNo002-1].style.display = "block";  
+										  dots[slideIndexSlideSetNo002-1].className += " active";
+										  setTimeout(showSlidesSlideSetNo002, 2000); // Change image every 2 seconds
 										}
 										</script>
 									
